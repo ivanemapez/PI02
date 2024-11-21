@@ -6,10 +6,10 @@ import matplotlib.pyplot as plt
 st.title("Dashboard internet")
 
 # Cargar datos desde un archivo en GitHub
-url = "https://github.com/ivanemapez/PI02/blob/main/df_agrupado.csv"
-url = "https://github.com/ivanemapez/PI02/blob/main/df_combinados.csv"
-url = "https://github.com/ivanemapez/PI02/blob/main/df_nacional.csv"
-url = "https://github.com/ivanemapez/PI02/blob/main/df_partidos.csv"
+url = "df_agrupado.csv"
+url = "df_combinados.csv"
+url = "df_nacional.csv"
+url = "df_partidos.csv"
 data = pd.read_csv(url)
 
 # Mostrar datos
