@@ -4,7 +4,7 @@ En esta etapa del proyecto, se llevó a cabo el proceso de Extracción, Transfor
 
 Durante la etapa de transformación, se aplicaron diversas técnicas para garantizar la calidad y relevancia de los datos. Se llevaron a cabo acciones como la limpieza de registros duplicados, la normalización de variables y la eliminación de aquellos datos considerados redundantes o irrelevantes para los objetivos del proyecto.
 
-El dataset df_combinado se creó como una combinación de varios datasets, permitiendo un análisis integral de los datos de acceso a internet en Argentina. Por otro lado, df_nacional contiene información específica a nivel nacional, mientras que df_partidos se enfoca en los datos a nivel de partidos y localidades. Por último, df_indicadores incluye indicadores socioeconómicos relevantes.
+El dataset df_combinado se creó como una combinación de varios datasets, permitiendo un análisis integral de los datos de acceso a internet en Argentina. Por otro lado, df_nacional contiene información específica a nivel nacional, mientras que df_partidos se enfoca en los datos a nivel de partidos y localidades. y por ultimo df_combinado contiene datos de las provincias. 
 
 Es importante destacar que la selección y descarte de datasets se realizó de manera cuidadosa, teniendo en cuenta la calidad y pertinencia de la información para este proyecto en particular.
 
@@ -12,7 +12,7 @@ Con la finalización de la etapa de ETL, los datasets resultantes están listos 
 
 # EDA - Análisis Exploratorio de los datos
 
-En este proyecto de análisis de datos, se exploran y analizan cuatro dataframes diferentes: `df_combinado`, `df_nacional`, `df_partidos` y `df_indicadores`. Cada uno de ellos proporciona información relevante sobre distintos aspectos relacionados con las conexiones de internet, indicadores económicos y datos demográficos en Argentina.
+En este proyecto de análisis de datos, se exploran y analizan cuatro dataframes diferentes: `df_combinado`, `df_nacional`y `df_partidos`. Cada uno de ellos proporciona información relevante sobre distintos aspectos relacionados con las conexiones de internet, indicadores económicos y datos demográficos en Argentina.
 
 ## Conceptos relevantes para el análisis de los datos
 - **ADSL**: ADSL (Asymmetric Digital Subscriber Line) es una tecnología de conexión a Internet de banda ancha que utiliza líneas telefónicas para transmitir datos. Proporciona una velocidad de descarga más rápida en comparación con la velocidad de carga. Es ampliamente utilizado en hogares y pequeñas empresas.
@@ -59,3 +59,17 @@ El dataframe `df_partidos` contiene datos específicos sobre los diferentes part
 - Provincia, Partido, Localidad: Información geográfica de los datos.
 - ADSL, CableModem, Fibra Optica, Otras conexiones: Cantidad de conexiones según el tipo.
 - Poblacion: Número de habitantes registrados.
+
+## ETL
+
+El archivo ETL contiene las distintas transformaciones de los distintos df, como por ejemplo eliminacion de datos duplicados, datos nulos, vacios. ademas de las uniones de los archivos .csv.
+
+## EDA
+
+tratamos en el eda de realizar suficientes analisis para poder decidir cuales era los kpi que podriamos realizar en un futuro
+
+## Conclusiones
+
+si bien se han estudiado las distintas formas de conexiones utilizadas en argentina desde 2017 la que mas ah crecido y demostrado que es la mas elegida los ultimos años es la de fibra optica, ya que permite una mayor velocidad, mas estabilidad en la continuidad del plan elegido, asimismo notamos que aun en muchas provincias no se llegan a los mismos valores, ya que hay muchas zonas rurales y zonas urbanas en el interior del pais que aun no se instalaron muchas conexiones de fibra optica. 
+
+A pesar de todo sigue siendo la forma mas rentable el invertir en conexion de fibra optica.
